@@ -21,7 +21,7 @@ public class AntSpawner : MonoBehaviour
 
     void Update()
     {
-		if(numberOfAnts < 1)
+		if(numberOfAnts < 3)
 		{
 			SpawnRandomAnt();
 		}
