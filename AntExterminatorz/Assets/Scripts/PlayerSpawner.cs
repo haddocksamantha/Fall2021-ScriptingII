@@ -17,7 +17,7 @@ public class PlayerSpawner : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (playerAlive = false)
+        if (playerAlive == false)
         {
             SpawnPlayer();
         }

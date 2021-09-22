@@ -37,8 +37,9 @@ public class AntSpawner : MonoBehaviour
 
 	void RandomSpawnPoint()
 	{
+		//will add list of specific spawn points to place in lanes instead of inbetween
 	  float x = 66f;
-      float y = 1.5f;
+      float y = 4f;
       float z = Random.Range(-zRange, zRange);
       spawnPos = new Vector3(x,y,z);
       transform.position = spawnPos;
