@@ -8,7 +8,14 @@
       <e p="Assembly-CSharp.csproj" t="IncludeRecursive" />
       <e p="Assets" t="Include">
         <e p="Scripts" t="Include">
+          <e p="AntController.cs" t="Include" />
+          <e p="AntSpawner.cs" t="Include" />
+          <e p="CollectableSO.cs" t="Include" />
           <e p="PlayerController.cs" t="Include" />
+          <e p="PlayerDataSO.cs" t="Include" />
+          <e p="PlayerSpawner.cs" t="Include" />
+          <e p="Projectile.cs" t="Include" />
+          <e p="ProjectileProperties.cs" t="Include" />
         </e>
       </e>
       <e p="obj" t="ExcludeRecursive" />

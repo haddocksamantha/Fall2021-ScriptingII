@@ -6,6 +6,7 @@ public class PlayerController : MonoBehaviour
 {
     public float playerSpeed = 20.0f;
     public float zRange = 42f;
+    public PlayerDataSO playerData;
     
     private float verticalInput;
     
