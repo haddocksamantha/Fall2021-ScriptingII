@@ -1,7 +1,8 @@
 
+/*
 using UnityEngine;
 
-public class CollectableSO : ScriptableObject
+public class CollectableSOExample : ScriptableObject
 {
   public bool collected;
   public int costValue;
@@ -10,3 +11,4 @@ public class CollectableSO : ScriptableObject
   public Color artColorTint = Color.blue;
 }
 //this is not my code, this is code from class I am referencing to troubleshoot making a scriptable object
+*/
