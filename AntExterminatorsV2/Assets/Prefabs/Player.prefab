@@ -12,10 +12,10 @@ GameObject:
   - component: {fileID: 1775919008081595554}
   - component: {fileID: 1775919008081595555}
   - component: {fileID: 1775919008081595556}
-  - component: {fileID: 1775919008081595552}
+  - component: {fileID: 1775919007318324825}
   m_Layer: 0
   m_Name: Player
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -97,7 +97,7 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &1775919008081595552
+--- !u!114 &1775919007318324825
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -106,10 +106,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1775919008081595557}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0697da35a00aca34bbbc3bf4a4f60a7c, type: 3}
+  m_Script: {fileID: 11500000, guid: 0169be1f62004884da830e416abb6b60, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  playerSpeed: 20
-  upButton: {fileID: 0}
-  downButton: {fileID: 0}
-  verticalInput: 10
+  playerSpeed: 5
