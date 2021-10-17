@@ -7,13 +7,20 @@ using UnityEngine.UI;
 public class PlayerMove : MonoBehaviour
 {
     public float playerSpeed = 1f;
-    public Button upButton;
-    public Button downButton;
-    
-    
-    
-    private float yValue = 1f;
-    private Vector3 backward = (-3,0,0);
+    public GameObject upButton;
+    public GameObject downButton;
+    public float verticalInput = 1;
+
+    void Awake()
+    {
+        upButton = GameObject.FindWithTag("UpButton");
+        downButton = GameObject.FindWithTag("DownButton");
+    }
+
+
+
+    //private float yValue = 1f;
+    //private Vector3 backward = (-3,0,0);
 
     // Update is called once per frame
     void Update()
@@ -35,13 +42,17 @@ public class PlayerMove : MonoBehaviour
     {
         Debug.Log("Down");
         //this will allow player to move down on input
-        transform.Translate(backward * yValue * Time.deltaTime * playerSpeed);
+        //transform.Translate(backward * yValue * Time.deltaTime * playerSpeed);
+        verticalInput = Input.GetAxis("Vertical");
+        transform.Translate(Vector3.forward * verticalInput * Time.deltaTime * playerSpeed);
     }
 
     void MoveUp()
     {
         Debug.Log("Up");
         //this will allow player to move up on input
+        verticalInput = Input.GetAxis("Vertical");
+        transform.Translate(Vector3.forward * -verticalInput * Time.deltaTime * playerSpeed);
 
     }
 
