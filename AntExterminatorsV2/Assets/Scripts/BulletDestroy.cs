@@ -4,20 +4,24 @@ using UnityEngine;
 
 public class BulletDestroy : MonoBehaviour
 {
+	public GameObject bulletPrefab;
+	public GameObject enemyPrefab;
+	
+	void Start()
+	{
+		enemyPrefab = GameObject.FindWithTag("Enemy");
 
-    // Update is called once per frame
-    void Update()
-    {
-        DestroyTheBullet();
-    }
+	}
+
+	void OnTriggerEnter(Collider other)
+	{
+		Debug.Log("Enemy Hit!");
+		Destroy(enemyPrefab);
+	}
 
     void DestroyTheBullet()
     {
         //this will destroy the bullet when it collides with the enemy 
     }
 
-    void DestroyTheEnemy()
-    {
-        //this will destroy the enemy when the bullet collides with it
-    }
 }

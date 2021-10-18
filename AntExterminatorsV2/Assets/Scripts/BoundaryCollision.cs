@@ -4,15 +4,20 @@ using UnityEngine;
 
 public class BoundaryCollision : MonoBehaviour
 {
-    // Start is called before the first frame update
+    public GameObject enemyPrefab;
+
     void Start()
     {
-        
+        enemyPrefab = GameObject.FindWithTag("Enemy");
+    }
+    
+    void OnTriggerEnter(Collider other)
+    {
+        //this will destroy the enemy prefab
+        Debug.Log("Enemy Destroyed");
+        Destroy(enemyPrefab);
+        //this will subtract points from the player
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
+
 }

@@ -6,17 +6,19 @@ using Random = UnityEngine.Random;
 public class SpawningEnemies : MonoBehaviour
 {
     public int numOfEnemies;
+	public GameObject enemyPrefab;
 
-    private int enemiesNeeded = 1;
+    //private int enemiesNeeded = 1;
     private float enemyX;
     private float enemyY;
     private float enemyZ;
-    private float zRange;
+    private float zRange = 3f;
     private Vector3 enemyTransform;
     
     // Start is called before the first frame update
     void Start()
     {
+		enemyPrefab = GameObject.FindWithTag("Enemy");
         numOfEnemies = 0;
     }
 
@@ -29,21 +31,19 @@ public class SpawningEnemies : MonoBehaviour
     void AreThereEnemies()
     {
         //this will check for how many enemies are in the scene and call spawning method
-        if (numOfEnemies == 0)
+        if (numOfEnemies <= 0)
         {
             SpawnEnemies();
-        } else if (numOfEnemies < enemiesNeeded)
-        {
-            SpawnEnemies();
-        }
-            
+        }  
     }
 
     void SpawnEnemies()
     {
+		Debug.Log("Enemy Spawned!");
         //this will spawn enemies into the scene
         EnemyTransformGenerator();
-        
+		Instantiate(enemyPrefab, enemyTransform, Quaternion.identity);
+		numOfEnemies ++;
     }
     
     void EnemyTransformGenerator()
