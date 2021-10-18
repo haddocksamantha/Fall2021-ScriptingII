@@ -8,6 +8,7 @@
       <e p="Assembly-CSharp.csproj" t="IncludeRecursive" />
       <e p="Assets" t="Include">
         <e p="Scripts" t="Include">
+          <e p="BoundaryCollision.cs" t="Include" />
           <e p="BulletActivating.cs" t="Include" />
           <e p="BulletDestroy.cs" t="Include" />
           <e p="EnemyDamage.cs" t="Include" />
