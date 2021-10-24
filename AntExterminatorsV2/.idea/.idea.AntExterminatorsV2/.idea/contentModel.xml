@@ -9,12 +9,14 @@
       <e p="Assets" t="Include">
         <e p="Scripts" t="Include">
           <e p="BoundaryCollision.cs" t="Include" />
+          <e p="Bullet.cs" t="Include" />
           <e p="BulletActivating.cs" t="Include" />
-          <e p="BulletDestroy.cs" t="Include" />
           <e p="EnemyDamage.cs" t="Include" />
           <e p="EnemyMovement.cs" t="Include" />
+          <e p="PlayerCollision.cs" t="Include" />
           <e p="PlayerMove.cs" t="Include" />
           <e p="PlayerMoveV2.cs" t="Include" />
+          <e p="PlayerScoreSO.cs" t="Include" />
           <e p="Spawning.cs" t="Include" />
           <e p="SpawningEnemies.cs" t="Include" />
         </e>
