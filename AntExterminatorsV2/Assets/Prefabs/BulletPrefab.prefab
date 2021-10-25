@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: -1465835986737825404}
   - component: {fileID: 4516709716702222250}
   - component: {fileID: 6288522120432735037}
+  - component: {fileID: 8675469314132901967}
   m_Layer: 0
   m_Name: BulletPrefab
   m_TagString: Bullet
@@ -48,6 +49,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   bulletPrefab: {fileID: 2318969139907231197}
   enemyPrefab: {fileID: 2253522832763943930, guid: 6ce3deb6eff1c964f8ba583f8022a2fa, type: 3}
+  bulletSpeed: 5
 --- !u!65 &4516709716702222250
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -77,6 +79,18 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!114 &8675469314132901967
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2318969139907231197}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 27ab16b175f60481c8e64b10086ecb21, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &7417710422727513881
 GameObject:
   m_ObjectHideFlags: 0
@@ -188,3 +202,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   bulletPrefab: {fileID: 0}
   enemyPrefab: {fileID: 0}
+  bulletSpeed: 0

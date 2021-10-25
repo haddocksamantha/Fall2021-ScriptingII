@@ -13,6 +13,8 @@ GameObject:
   - component: {fileID: 2253522832763943929}
   - component: {fileID: 2253522832763943928}
   - component: {fileID: 2253522832763943931}
+  - component: {fileID: 61546014}
+  - component: {fileID: 51124706899998234}
   m_Layer: 0
   m_Name: Ant
   m_TagString: Enemy
@@ -107,5 +109,34 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 0fa94cd5a490fe947bef6706c30a4bda, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  enemySpeed: 6
+--- !u!54 &61546014
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2253522832763943930}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 0
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
+--- !u!114 &51124706899998234
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2253522832763943930}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0f483c926c6144fbc9c9c0cb60cd8173, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
