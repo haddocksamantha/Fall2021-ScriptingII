@@ -9,7 +9,7 @@ public class BulletActivating : MonoBehaviour
 
     void Start()
     {
-        bulletPrefab = GameObject.FindWithTag("Bullet");
+        //bulletPrefab = GameObject.FindWithTag("Bullet");
     }
     void Update()
     {

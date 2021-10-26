@@ -4,27 +4,48 @@ using UnityEngine;
 
 public class EnemyDamage : MonoBehaviour
 {
+    public int playerHealth;
+
+    private bool collidingWithPlayer;
+    
     // Update is called once per frame
     void Update()
     {
-        CollisionWithPlayer();
         CollisionWithBoundary();
     }
 
+    private void OnTriggerEnter(Collider other)
+    {
+        CollisionWithPlayer();
+        
+        if (collidingWithPlayer == true)
+        {
+            //this will subtract player health
+            DestroyEnemyPrefab();
+        }
+    }
+    
     void CollisionWithPlayer()
     {
-        //this will damage the player 
-        DestroyEnemyPrefab();
+        if (GameObject.FindWithTag("Player"))
+        {
+            collidingWithPlayer = true;
+        } else if(!GameObject.FindWithTag("Player"))
+        {
+            collidingWithPlayer = false;
+        }
     }
 
     void CollisionWithBoundary()
     {
+        
         //this will subtract points
-        DestroyEnemyPrefab();
     }
 
     void DestroyEnemyPrefab()
     {
+        Destroy(gameObject);
+        Debug.Log("enemy collision");
         //this will remove the enemy from the scene on collision
     }
 }

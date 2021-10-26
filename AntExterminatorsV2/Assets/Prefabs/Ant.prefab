@@ -15,6 +15,7 @@ GameObject:
   - component: {fileID: 2253522832763943931}
   - component: {fileID: 61546014}
   - component: {fileID: 51124706899998234}
+  - component: {fileID: 428239782}
   m_Layer: 0
   m_Name: Ant
   m_TagString: Enemy
@@ -140,3 +141,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0f483c926c6144fbc9c9c0cb60cd8173, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &428239782
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2253522832763943930}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a7e49f22bc0851f4db40309689fe9642, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  playerHealth: 0
+  enemyRb: {fileID: 61546014}

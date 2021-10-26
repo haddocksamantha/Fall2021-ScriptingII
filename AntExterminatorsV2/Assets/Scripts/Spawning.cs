@@ -10,7 +10,7 @@ public class Spawning : MonoBehaviour
 	public GameObject playerPrefab;
 	public bool playerAlive;
 	
-	private Vector3 playerPos;
+	//private Transform playerTransform;
 	private int playerNum;
 	
     // Start is called before the first frame update
@@ -18,7 +18,7 @@ public class Spawning : MonoBehaviour
     {
 	    playerNum = 0;
 	    playerAlive = false;
-	    playerPrefab = GameObject.FindWithTag("Player");
+	    //playerPrefab = GameObject.FindWithTag("Player");
         SpawnPlayer();
     }
 
