@@ -18,7 +18,7 @@ public class SpawningEnemies : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-		enemyPrefab = GameObject.FindWithTag("Enemy");
+		//enemyPrefab = GameObject.FindWithTag("Enemy");
         numOfEnemies = 0;
     }
 
