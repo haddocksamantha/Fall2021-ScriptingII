@@ -4,11 +4,14 @@ using UnityEngine;
 
 public class EnemyDamage : MonoBehaviour
 {
+    //these will call the player data SO 
     public int playerHealth;
+    public int playerScore;
 
+    private int enDamage = 1;
+    private int boundDamage = 1;
     private bool collidingWithPlayer;
     
-    // Update is called once per frame
     void Update()
     {
         CollisionWithBoundary();
@@ -20,8 +23,8 @@ public class EnemyDamage : MonoBehaviour
         
         if (collidingWithPlayer == true)
         {
-            //this will subtract player health
             DestroyEnemyPrefab();
+            playerHealth -= colDamage;
         }
     }
     
@@ -38,14 +41,12 @@ public class EnemyDamage : MonoBehaviour
 
     void CollisionWithBoundary()
     {
-        
-        //this will subtract points
+        playerScore -= boundDamage;
     }
 
     void DestroyEnemyPrefab()
     {
         Destroy(gameObject);
         Debug.Log("enemy collision");
-        //this will remove the enemy from the scene on collision
     }
 }
