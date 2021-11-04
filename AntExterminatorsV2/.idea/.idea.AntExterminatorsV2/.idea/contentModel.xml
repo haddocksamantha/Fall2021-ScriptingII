@@ -23,6 +23,12 @@
           <e p="PlayerScoreSO.cs" t="Include" />
           <e p="Spawning.cs" t="Include" />
           <e p="SpawningEnemies.cs" t="Include" />
+          <e p="test" t="Include">
+            <e p="manager.cs" t="Include" />
+            <e p="playerHealthManager.cs" t="Include" />
+            <e p="playerHealthModel.cs" t="Include" />
+            <e p="playerhealthSO.cs" t="Include" />
+          </e>
         </e>
       </e>
       <e p="obj" t="ExcludeRecursive" />
