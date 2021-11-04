@@ -5,51 +5,65 @@ using UnityEngine;
 
 public class Bullet : MonoBehaviour
 {
-	public Rigidbody enemyRb;
+	
 	public float bulletSpeed;
 
 	private bool collidingWithEnemy;
 	
-	void Start()
+	private void Start()
 	{
-		enemyRb = GetComponent<Rigidbody>();
+		
 	}
 	
-	void Update()
+	private void Update()
 	{
 		BulletMovement();
 	}
 
-	void OnTriggerEnter(Collider other)
+	// private void OnTriggerEnter(Collider other)
+	// {
+	// 	CheckIfCollidingWithEnemy();
+	// 	
+	// 	if (collidingWithEnemy == true)
+	// 	{
+	// 		Debug.Log("Enemy Hit!");
+	// 		Destroy(enemyRb);
+	// 		DestroyTheBullet();
+	// 	}
+	// }
+
+	private void OnTriggerEnter(Collider other)
 	{
-		CollidingWithEnemy();
-		
-		if (collidingWithEnemy == true)
+		collidingWithEnemy = CheckIfCollidingWithEnemy(other);
+		if (collidingWithEnemy)
 		{
-			Debug.Log("Enemy Hit!");
-			Destroy(enemyRb);
-			DestroyTheBullet();
+			Destroy(other.gameObject);
 		}
 	}
 
-	void CollidingWithEnemy()
+	private bool CheckIfCollidingWithEnemy(Collider other)
 	{
-		if (GameObject.FindWithTag("Enemy"))
+		Debug.Log(other);
+		var result = false; 
+		if (other.gameObject.tag == "Enemy")
 		{
-			collidingWithEnemy = true;
-		} else if(!GameObject.FindWithTag("Enemy"))
+		//	collidingWithEnemy = true;
+			result = true;
+		} else 
 		{
-			collidingWithEnemy = false;
+			result = false;
+			//	collidingWithEnemy = false;
 		}
+		return result;
 	}
 
-    void DestroyTheBullet()
+    private void DestroyTheBullet()
     {
         //this will destroy the bullet when it collides with the enemy 
         Destroy(gameObject);
     }
 
-    void BulletMovement()
+    private void BulletMovement()
     {
 	    transform.Translate(Vector3.right * Time.deltaTime * bulletSpeed );
     }

@@ -8,6 +8,7 @@ public class SpawningEnemies : MonoBehaviour
     public int numOfEnemies;
 	public GameObject enemyPrefab;
 
+    //Vector3(8.96000004,1.57000005,-1.07000005)
     //private int enemiesNeeded = 1;
     private float enemyX;
     private float enemyY;

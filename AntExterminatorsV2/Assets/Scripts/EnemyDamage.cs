@@ -24,7 +24,7 @@ public class EnemyDamage : MonoBehaviour
         if (collidingWithPlayer == true)
         {
             DestroyEnemyPrefab();
-            playerHealth -= colDamage;
+         //   playerHealth -= colDamage;
         }
     }
     
