@@ -1,10 +1,15 @@
 
 using UnityEngine;
 using Random = UnityEngine.Random;
+using UnityEngine.Events;
+using UnityEngine.UI;
+
 
 
 public class SpawningEnemies : MonoBehaviour
 {
+    [SerializeField] private enemyDataSO enemyData;
+    
     public int numOfEnemies;
 	public GameObject enemyPrefab;
 
@@ -53,3 +58,5 @@ public class SpawningEnemies : MonoBehaviour
         enemyTransform = new Vector3(enemyX, enemyY, enemyZ);
     }
 }
+
+

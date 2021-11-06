@@ -9,15 +9,25 @@ public class playerhealthSO : ScriptableObject
 {
     public playerHealthModel model;
 
-    public void damage(float amount)
+    // public void damage(float amount)
+    // {
+    //     model.health -= amount;
+    //     if(model.health <= 0f)
+    //     {
+    //         model.health = 0f;
+    //         isDead?.Invoke();
+    //     }
+    //     //model.health = model.health - amount;
+    // }
+
+    public void damage(int amt)
     {
-        model.health -= amount;
-        if(model.health <= 0f)
+        model.lives -= amt;
+        if (model.lives <= 0)
         {
-            model.health = 0f;
+            model.lives = 0;
             isDead?.Invoke();
         }
-        //model.health = model.health - amount;
     }
 
     public UnityAction isDead;

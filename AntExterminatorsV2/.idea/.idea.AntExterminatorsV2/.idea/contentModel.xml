@@ -17,7 +17,9 @@
           </e>
           <e p="DestroyOutOfBounds.cs" t="Include" />
           <e p="EnemyDamage.cs" t="Include" />
+          <e p="EnemyDataSO.cs" t="Include" />
           <e p="EnemyMovement.cs" t="Include" />
+          <e p="HealthText.cs" t="Include" />
           <e p="PlayerCollision.cs" t="Include" />
           <e p="PlayerMoveV2.cs" t="Include" />
           <e p="PlayerScoreSO.cs" t="Include" />

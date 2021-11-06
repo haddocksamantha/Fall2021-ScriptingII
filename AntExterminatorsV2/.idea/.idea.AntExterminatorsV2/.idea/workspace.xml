@@ -22,10 +22,12 @@
     <list default="true" id="68b7ca63-999c-4707-a23c-f8a18dc385a4" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.AntExterminatorsV2/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.AntExterminatorsV2/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.AntExterminatorsV2/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.AntExterminatorsV2/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Player.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Player.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/EnemyDamage.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/EnemyDamage.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/SpawningEnemies.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/SpawningEnemies.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Logs/AssetImportWorker0-prev.log" beforeDir="false" afterPath="$PROJECT_DIR$/Logs/AssetImportWorker0-prev.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Logs/AssetImportWorker0.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Logs/shadercompiler-AssetImportWorker0.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/test/playerHealthManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/test/playerHealthManager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/test/playerhealthSO.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/test/playerhealthSO.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Logs/AssetImportWorker0-prev.log" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/obj/Debug/Assembly-CSharp.csprojAssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/Assembly-CSharp.csprojAssemblyReference.cache" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -39,6 +41,8 @@
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.visualscripting@1.6.1/Runtime/VisualScripting.Core/Variables/VariablesSaver.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/BulletOutOfBounds.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/HealthText.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/EnemyDataSO.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -49,9 +53,13 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/Spawning.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/BulletActivating.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/EnemyDamage1.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/EnemyDamage.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Bullet.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/test/playerhealthSO.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/test/playerHealthManager.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/HealthText.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/EnemyDamage.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/SpawningEnemies.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/EnemyDataSO.cs" />
       </list>
     </option>
   </component>
@@ -111,6 +119,7 @@
       <workItem from="1635821489537" duration="662000" />
       <workItem from="1635980697482" duration="2556000" />
       <workItem from="1635988307190" duration="165000" />
+      <workItem from="1636162625858" duration="3384000" />
     </task>
     <servers />
   </component>

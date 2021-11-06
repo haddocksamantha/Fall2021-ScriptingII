@@ -3,6 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Events;
+using UnityEngine.UI;
 
 public class playerHealthManager : MonoBehaviour
 {
@@ -17,26 +18,39 @@ public class playerHealthManager : MonoBehaviour
 
     private void Start()
     {
-        healthData.model.health = 10f;
+       // healthData.model.health = 10f;
+       healthData.model.lives = 5;
     }
 
-    private void Update()
+    private void OnTriggerEnter(Collider other)
     {
-        Damage();
-        if (healthData.model.health <= 0)
+        healthData.damage(1);
+        if (healthData.model.lives <= 0)
         {
             Dead();
         }
+    }
+    
+    
+    
+
+    private void Update()
+    {
+        // Damage();
+        // if (healthData.model.health <= 0)
+        // {
+        //     Dead();
+        // }
         
     }
 
-    public void Damage()
-    {
-        if (Input.GetKeyDown(KeyCode.A))
-        {
-            healthData.damage(5);
-        }
-    }
+    // public void Damage()
+    // {
+    //     if (Input.GetKeyDown(KeyCode.A))
+    //     {
+    //         healthData.damage(5);
+    //     }
+    // }
 
     private void OnEnable()
     {
