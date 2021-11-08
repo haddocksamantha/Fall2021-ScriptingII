@@ -4,12 +4,12 @@ using UnityEngine;
 
 public class EnemyDamage : MonoBehaviour
 {
-    [SerializeField] private SpawningEnemies enemyData;
+    [SerializeField] private enemyDataSO enemyData;
     //[SerializeField] private playerhealthSO healthData;
     //these will call the player data SO 
     public int playerScore;
 
-    private int enDamage = 1;
+    //private int enDamage = 1;
     private int boundDamage = 1;
     private bool collidingWithPlayer;
 

@@ -153,5 +153,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a7e49f22bc0851f4db40309689fe9642, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  playerHealth: 0
-  enemyRb: {fileID: 61546014}
+  enemyData: {fileID: 11400000, guid: 3cc05c13131e0da40ba34335bcb3d194, type: 2}
+  playerScore: 0

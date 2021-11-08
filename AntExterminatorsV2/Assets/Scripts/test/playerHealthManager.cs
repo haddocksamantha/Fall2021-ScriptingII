@@ -8,6 +8,7 @@ using UnityEngine.UI;
 public class playerHealthManager : MonoBehaviour
 {
     [SerializeField] private playerhealthSO healthData;
+    private bool collidingWithEnemy;
 
     public UnityEvent isDead;
 
@@ -22,15 +23,32 @@ public class playerHealthManager : MonoBehaviour
        healthData.model.lives = 5;
     }
 
-    private void OnTriggerEnter(Collider other)
+    public void CollisionWithEnemy()
     {
-        healthData.damage(1);
-        if (healthData.model.lives <= 0)
+        if (GameObject.FindWithTag("Enemy"))
         {
-            Dead();
+            collidingWithEnemy = true;
+        } else if(GameObject.FindWithTag("Bullet"))
+        {
+            collidingWithEnemy = false;
         }
     }
     
+    private void OnTriggerEnter(Collider other)
+    {
+        CollisionWithEnemy();
+
+        if (collidingWithEnemy == true)
+        {
+            healthData.damage(1);
+            if (healthData.model.lives <= 0)
+            {
+                Dead();
+            }
+        }
+    }
+
+  
     
     
 
