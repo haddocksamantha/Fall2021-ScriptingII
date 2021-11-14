@@ -19,6 +19,8 @@
           <e p="EnemyDamage.cs" t="Include" />
           <e p="EnemyDataSO.cs" t="Include" />
           <e p="EnemyMovement.cs" t="Include" />
+          <e p="GameHandler.cs" t="Include" />
+          <e p="HealthSystem.cs" t="Include" />
           <e p="HealthText.cs" t="Include" />
           <e p="PlayerCollision.cs" t="Include" />
           <e p="PlayerMoveV2.cs" t="Include" />
