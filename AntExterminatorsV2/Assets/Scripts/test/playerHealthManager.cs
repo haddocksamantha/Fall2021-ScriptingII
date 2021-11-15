@@ -33,8 +33,9 @@ public class playerHealthManager : MonoBehaviour
             healthData.damage(1);
             if (healthData.model.lives <= 0)
             {
-                healthData.model.lives = 0; 
+                healthData.model.lives = 0;
                 Dead();
+                Debug.Log("DEAD");
             }
         }
 
