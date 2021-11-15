@@ -14,7 +14,8 @@ public class SpawningEnemies : MonoBehaviour
     
  
 	public GameObject enemyPrefab;
-    public float time = 2.5f;
+    public float time = 0.8f;
+   // public bool canSpawn = true;
     
     private float enemyX = 8.96000004f;
     private float enemyY = 1.57000005f;
@@ -25,30 +26,15 @@ public class SpawningEnemies : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-		//enemyPrefab = GameObject.FindWithTag("Enemy");
         enemyData.numOfEnemies = 0;
         StartCoroutine(EnemySpawnTimer());
     }
-
-    void AreThereEnemies()
-    {
-        //this will check for how many enemies are in the scene and call spawning method
-        if (enemyData.numOfEnemies <= 0)
-        {
-            enemyData.numOfEnemies = 0;
-            SpawnEnemies();
-        }  
-    }
-
+    
     void SpawnEnemies()
     {
         enemyData.numOfEnemies++;
-        //this will spawn enemies into the scene
-        Debug.Log("Enemies: " + enemyData.numOfEnemies);
         EnemyTransformGenerator();
         Instantiate(enemyPrefab, enemyTransform, Quaternion.identity);
-        
-        
     }
     
     void EnemyTransformGenerator()
@@ -59,10 +45,11 @@ public class SpawningEnemies : MonoBehaviour
 
     IEnumerator EnemySpawnTimer()
     {
-        AreThereEnemies();
         yield return new WaitForSeconds(time);
+        SpawnEnemies();
         StartCoroutine(EnemySpawnTimer());
     }
 }
 
 
+//while (canSpawn)

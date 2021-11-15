@@ -5,6 +5,5 @@ using UnityEngine;
 [CreateAssetMenu]
 public class PlayerScoreSO : ScriptableObject
 {
-    public int playerPoints;
-    public int playerHealth;
+    public int points;
 }

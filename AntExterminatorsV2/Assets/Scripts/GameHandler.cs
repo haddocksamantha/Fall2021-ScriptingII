@@ -5,12 +5,10 @@ using UnityEngine;
 
 public class GameHandler : MonoBehaviour
 {
-   private int health;
+    [SerializeField] private PlayerScoreSO playerScore;
    private void Start()
    {
-      HealthSystem healthSystem = new HealthSystem(100);
-      
-      Debug.Log("health" + healthSystem.GetHealth());
+       playerScore.points = 0;
    }
 
   

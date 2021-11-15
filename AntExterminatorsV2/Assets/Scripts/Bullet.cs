@@ -5,7 +5,7 @@ using UnityEngine;
 
 public class Bullet : MonoBehaviour
 {
-	
+	[SerializeField] private PlayerScoreSO score;
 	public float bulletSpeed;
 
 	private bool collidingWithEnemy;
@@ -21,6 +21,8 @@ public class Bullet : MonoBehaviour
 		if (collidingWithEnemy)
 		{
 			Destroy(other.gameObject);
+			score.points++;
+			Destroy(gameObject);
 		}
 	}
 

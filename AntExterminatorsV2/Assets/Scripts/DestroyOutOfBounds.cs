@@ -4,8 +4,11 @@ using UnityEngine;
 
 public class DestroyOutOfBounds : MonoBehaviour
 {
+    [SerializeField] private PlayerScoreSO score;
     private float topBound = 13;
     private float lowerBound = -11;
+
+    private int penalty = 3;
     
     void Update()
     {
@@ -15,10 +18,13 @@ public class DestroyOutOfBounds : MonoBehaviour
       //      Debug.Log("Passed Right Boundary");
             Destroy(gameObject);
         }
-        else if (transform.position .x < lowerBound)
+        else if (transform.position.x < lowerBound)
         {
+            
 //            Debug.Log("Passed Left Boundary");
             Destroy(gameObject);
+            score.points -= penalty;
+            if (score.points <= 0) score.points = 0;
         }
 
     }

@@ -47,8 +47,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c67b91ba0aca8724480fdf8eff4c1e8b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  bulletPrefab: {fileID: 2318969139907231197}
-  enemyPrefab: {fileID: 2253522832763943930, guid: 6ce3deb6eff1c964f8ba583f8022a2fa, type: 3}
+  score: {fileID: 11400000, guid: 5312349c4e5ce1947ba816ec614b613a, type: 2}
   bulletSpeed: 5
 --- !u!65 &4516709716702222250
 BoxCollider:
@@ -200,6 +199,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c67b91ba0aca8724480fdf8eff4c1e8b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  bulletPrefab: {fileID: 0}
-  enemyPrefab: {fileID: 0}
+  score: {fileID: 0}
   bulletSpeed: 0
