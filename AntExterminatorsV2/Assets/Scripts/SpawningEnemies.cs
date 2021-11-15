@@ -3,6 +3,8 @@ using UnityEngine;
 using Random = UnityEngine.Random;
 using UnityEngine.Events;
 using UnityEngine.UI;
+using System.Collections;
+using System;
 
 
 
@@ -10,11 +12,10 @@ public class SpawningEnemies : MonoBehaviour
 {
     [SerializeField] private EnemyDataSO enemyData;
     
-    public int numOfEnemies;
+ 
 	public GameObject enemyPrefab;
-
-
-    //private int enemiesNeeded = 1;
+    public float time = 2.5f;
+    
     private float enemyX = 8.96000004f;
     private float enemyY = 1.57000005f;
     private float enemyZ;
@@ -25,37 +26,42 @@ public class SpawningEnemies : MonoBehaviour
     void Start()
     {
 		//enemyPrefab = GameObject.FindWithTag("Enemy");
-        numOfEnemies = 0;
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        AreThereEnemies();
+        enemyData.numOfEnemies = 0;
+        StartCoroutine(EnemySpawnTimer());
     }
 
     void AreThereEnemies()
     {
         //this will check for how many enemies are in the scene and call spawning method
-        if (numOfEnemies <= 0)
+        if (enemyData.numOfEnemies <= 0)
         {
+            enemyData.numOfEnemies = 0;
             SpawnEnemies();
         }  
     }
 
     void SpawnEnemies()
     {
-		Debug.Log("Enemy Spawned!");
+        enemyData.numOfEnemies++;
         //this will spawn enemies into the scene
+        Debug.Log("Enemies: " + enemyData.numOfEnemies);
         EnemyTransformGenerator();
-		Instantiate(enemyPrefab, enemyTransform, Quaternion.identity);
-		numOfEnemies ++;
+        Instantiate(enemyPrefab, enemyTransform, Quaternion.identity);
+        
+        
     }
     
     void EnemyTransformGenerator()
     {
         enemyZ = Random.Range(-zRange, zRange);
         enemyTransform = new Vector3(enemyX, enemyY, enemyZ);
+    }
+
+    IEnumerator EnemySpawnTimer()
+    {
+        AreThereEnemies();
+        yield return new WaitForSeconds(time);
+        StartCoroutine(EnemySpawnTimer());
     }
 }
 
