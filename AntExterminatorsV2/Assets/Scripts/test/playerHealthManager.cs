@@ -22,31 +22,40 @@ public class playerHealthManager : MonoBehaviour
        // healthData.model.health = 10f;
        healthData.model.lives = 5;
     }
-
-    public void CollisionWithEnemy()
-    {
-        if (GameObject.FindWithTag("Enemy"))
-        {
-            collidingWithEnemy = true;
-        } else if(GameObject.FindWithTag("Bullet"))
-        {
-            collidingWithEnemy = false;
-        }
-    }
+    
     
     private void OnTriggerEnter(Collider other)
     {
-        CollisionWithEnemy();
+        collidingWithEnemy = CheckIfCollidingWithEnemy(other);
 
-        if (collidingWithEnemy == true)
+        if (collidingWithEnemy)
         {
             healthData.damage(1);
             if (healthData.model.lives <= 0)
             {
+                healthData.model.lives = 0; 
                 Dead();
             }
         }
+
+        bool CheckIfCollidingWithEnemy(Collider other)
+        {
+            Debug.Log(other);
+            var result = false; 
+		
+            if (other.gameObject.tag == "Enemy")
+            {
+                result = true;
+            } else 
+            {
+                result = false;
+            }
+            return result;
+        }
+
     }
+    
+    
 
   
     

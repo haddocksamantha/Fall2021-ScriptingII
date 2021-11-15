@@ -30,7 +30,7 @@ public class Spawning : MonoBehaviour
     }
 	
 	void SpawnPlayer() {
-		Debug.Log("Player Spawned");
+		//Debug.Log("Player Spawned");
 		//this will spawn the player in the scene at its spawn point
 		Vector3 playerPos = new Vector3(spawnX, spawnY, spawnZ);
 

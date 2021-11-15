@@ -12,12 +12,12 @@ public class DestroyOutOfBounds : MonoBehaviour
         //destroys objects out of player view
         if (transform.position.x > topBound)
         {
-            Debug.Log("Passed Right Boundary");
+      //      Debug.Log("Passed Right Boundary");
             Destroy(gameObject);
         }
         else if (transform.position .x < lowerBound)
         {
-            Debug.Log("Passed Left Boundary");
+//            Debug.Log("Passed Left Boundary");
             Destroy(gameObject);
         }
 

@@ -5,9 +5,10 @@ using UnityEngine.Events;
 
 
 [CreateAssetMenu]
-public class enemyDataSO : ScriptableObject
+public class EnemyDataSO : ScriptableObject
 {
    public int numOfEnemies;
    
+
    
 }

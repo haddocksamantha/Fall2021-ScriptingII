@@ -8,7 +8,7 @@ using UnityEngine.UI;
 
 public class SpawningEnemies : MonoBehaviour
 {
-    [SerializeField] private enemyDataSO enemyData;
+    [SerializeField] private EnemyDataSO enemyData;
     
     public int numOfEnemies;
 	public GameObject enemyPrefab;

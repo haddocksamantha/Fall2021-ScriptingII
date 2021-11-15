@@ -1,10 +1,9 @@
-using System.Collections;
-using System.Collections.Generic;
+
 using UnityEngine;
 
 public class EnemyDamage : MonoBehaviour
 {
-    [SerializeField] private enemyDataSO enemyData;
+    [SerializeField] private EnemyDataSO enemyData;
     //[SerializeField] private playerhealthSO healthData;
     //these will call the player data SO 
     public int playerScore;
@@ -12,9 +11,8 @@ public class EnemyDamage : MonoBehaviour
     //private int enDamage = 1;
     private int boundDamage = 1;
     private bool collidingWithPlayer;
-
-   
-    void Update()
+    
+    private void Update()
     {
         CollisionWithBoundary();
     }
@@ -23,15 +21,16 @@ public class EnemyDamage : MonoBehaviour
     {
         CollisionWithPlayer();
         
-        if (collidingWithPlayer == true)
+        if (collidingWithPlayer)
         {
             DestroyEnemyPrefab();
             enemyData.numOfEnemies -= 1;
+            EnemiesNotBelowZero();
             //   playerHealth -= colDamage;
         }
     }
     
-    void CollisionWithPlayer()
+    private void CollisionWithPlayer()
     {
         if (GameObject.FindWithTag("Player"))
         {
@@ -42,15 +41,24 @@ public class EnemyDamage : MonoBehaviour
         }
     }
 
-    void CollisionWithBoundary()
+    private void CollisionWithBoundary()
     {
         playerScore -= boundDamage;
         enemyData.numOfEnemies -= 1;
+        EnemiesNotBelowZero();
     }
 
-    void DestroyEnemyPrefab()
+    private void DestroyEnemyPrefab()
     {
         Destroy(gameObject);
-        Debug.Log("enemy collision");
+//        Debug.Log("enemy collision");
+    }
+
+    private void EnemiesNotBelowZero()
+    {
+        if (enemyData.numOfEnemies <= 0)
+        {
+            enemyData.numOfEnemies = 0;
+        }
     }
 }

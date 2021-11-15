@@ -8,5 +8,4 @@ public class playerHealthModel
     public int lives;
     public float health;
     
-    
 }

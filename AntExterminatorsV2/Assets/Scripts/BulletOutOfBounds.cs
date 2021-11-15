@@ -11,7 +11,7 @@ public class BulletOutOfBounds : MonoBehaviour
         //destroys objects out of player view
         if (transform.position.x > boundary)
         {
-            Debug.Log("Bullet Out of Bounds");
+           // Debug.Log("Bullet Out of Bounds");
             Destroy(gameObject);
         }
         

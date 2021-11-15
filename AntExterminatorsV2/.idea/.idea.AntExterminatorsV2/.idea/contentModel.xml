@@ -13,18 +13,22 @@
           <e p="BulletOutOfBounds.cs" t="Include" />
           <e p="Defunct" t="Include">
             <e p="BoundaryCollision.cs" t="Include" />
+            <e p="HealthSystem.cs" t="Include" />
             <e p="PlayerMove.cs" t="Include" />
           </e>
           <e p="DestroyOutOfBounds.cs" t="Include" />
-          <e p="EnemyDamage.cs" t="Include" />
-          <e p="EnemyDataSO.cs" t="Include" />
-          <e p="EnemyMovement.cs" t="Include" />
+          <e p="Enemy Scripts" t="Include">
+            <e p="EnemyDamage.cs" t="Include" />
+            <e p="EnemyDataSO.cs" t="Include" />
+            <e p="EnemyMovement.cs" t="Include" />
+          </e>
           <e p="GameHandler.cs" t="Include" />
-          <e p="HealthSystem.cs" t="Include" />
           <e p="HealthText.cs" t="Include" />
-          <e p="PlayerCollision.cs" t="Include" />
-          <e p="PlayerMoveV2.cs" t="Include" />
-          <e p="PlayerScoreSO.cs" t="Include" />
+          <e p="Player Scripts" t="Include">
+            <e p="PlayerCollision.cs" t="Include" />
+            <e p="PlayerMoveV2.cs" t="Include" />
+            <e p="PlayerScoreSO.cs" t="Include" />
+          </e>
           <e p="Spawning.cs" t="Include" />
           <e p="SpawningEnemies.cs" t="Include" />
           <e p="test" t="Include">

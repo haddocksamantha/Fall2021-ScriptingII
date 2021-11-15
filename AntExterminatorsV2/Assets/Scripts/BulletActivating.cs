@@ -15,7 +15,7 @@ public class BulletActivating : MonoBehaviour
     {
         if(Input.GetKeyDown(KeyCode.F))
         {
-            Debug.Log("Bullet Shot!)");
+            //Debug.Log("Bullet Shot!)");
             Instantiate(bulletPrefab,transform.position,transform.rotation);
 
         }
