@@ -141,9 +141,9 @@ MonoBehaviour:
   isDead:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 11500000, guid: f01ffe5b306e45b489984cb925c002e1, type: 3}
-        m_TargetAssemblyTypeName: UnityEngine.Object, UnityEngine
-        m_MethodName: 
+      - m_Target: {fileID: 2600070593888296335, guid: cf8d50ca832d7ab439c361ed6de7b258, type: 3}
+        m_TargetAssemblyTypeName: SceneManagerScript, Assembly-CSharp
+        m_MethodName: LoadGameOverScene
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
