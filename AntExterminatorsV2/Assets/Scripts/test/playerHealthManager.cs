@@ -20,7 +20,7 @@ public class playerHealthManager : MonoBehaviour
     private void Start()
     {
        // healthData.model.health = 10f;
-       healthData.model.lives = 5;
+       healthData.model.lives = 3;
     }
     
     

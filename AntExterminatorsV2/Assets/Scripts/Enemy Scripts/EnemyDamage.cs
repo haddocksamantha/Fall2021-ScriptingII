@@ -1,6 +1,7 @@
 
 using UnityEngine;
 
+
 public class EnemyDamage : MonoBehaviour
 {
     [SerializeField] private EnemyDataSO enemyData;

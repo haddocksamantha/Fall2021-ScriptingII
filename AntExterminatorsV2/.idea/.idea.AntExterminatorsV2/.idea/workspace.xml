@@ -49,6 +49,7 @@
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.visualscripting@1.6.1/Runtime/VisualScripting.Core/Variables/VariablesSaver.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/BulletOutOfBounds.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/HealthText.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/PenaltyText.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/GameHandler.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
@@ -65,14 +66,16 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/test/playerHealthModel.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Enemy Scripts/EnemyDataSO.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Bullet.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/test/playerHealthManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Spawning.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/SpawningEnemies.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/BulletActivating.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Enemy Scripts/EnemyDamage.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/BulletOutOfBounds.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/DestroyOutOfBounds.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/MuteAudio.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/test/playerHealthManager.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/SpawningEnemies.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/HeartScript.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/PenaltyText.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Enemy Scripts/EnemyDamage.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/DestroyOutOfBounds.cs" />
       </list>
     </option>
   </component>
@@ -137,6 +140,7 @@
       <workItem from="1636845994234" duration="1156000" />
       <workItem from="1636947252919" duration="2019000" />
       <workItem from="1637032685068" duration="285000" />
+      <workItem from="1637193299937" duration="3434000" />
     </task>
     <servers />
   </component>
