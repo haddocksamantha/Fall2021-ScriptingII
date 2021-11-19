@@ -142,7 +142,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   score: {fileID: 11400000, guid: 5312349c4e5ce1947ba816ec614b613a, type: 2}
-  pSO: {fileID: 11400000, guid: 50115d76f5734422f8710e7f6a2f5719, type: 2}
+  penaltyText: {fileID: 3561106652042505424, guid: 297ea430ab78f4457b5565ad9f42d12c, type: 3}
 --- !u!114 &428239782
 MonoBehaviour:
   m_ObjectHideFlags: 0

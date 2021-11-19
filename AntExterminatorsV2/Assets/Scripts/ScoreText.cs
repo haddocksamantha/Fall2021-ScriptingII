@@ -8,7 +8,6 @@ public class ScoreText : MonoBehaviour
 {
     [SerializeField] private PlayerScoreSO score;
     private Text playerScore;
-    
 
     private void Awake()
     {

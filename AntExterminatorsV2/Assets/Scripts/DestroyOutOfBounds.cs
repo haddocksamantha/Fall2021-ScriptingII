@@ -7,16 +7,15 @@ using UnityEngine.UI;
 public class DestroyOutOfBounds : MonoBehaviour
 {
     [SerializeField] private PlayerScoreSO score;
-    [SerializeField] private PenaltySO pSO;
-    
     private float topBound = 13;
     private float lowerBound = -11;
-
+    private int penalty = 10;
+    
     //public Text penaltyText;
     
     private void Start()
     {
-       
+       // penaltyText = GetComponent<Text>();
     }
 
     void Update()
@@ -32,19 +31,17 @@ public class DestroyOutOfBounds : MonoBehaviour
             
 //            Debug.Log("Passed Left Boundary");
             Destroy(gameObject);
-            score.points -= pSO.penalty;
+            score.points -= penalty;
             
             if (score.points <= 0) score.points = 0;
         }
-        RunPenaltyText();
+        //UpdatePenaltyText();
     }
 
-    private void RunPenaltyText()
+    private void UpdatePenaltyText()
     {
-        pSO.penaltyOn = true;
+        //penaltyText.text = ("-" + penalty);
     }
-
-    
     
     
 }
