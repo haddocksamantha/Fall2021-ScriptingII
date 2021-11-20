@@ -4,12 +4,12 @@ using UnityEngine;
 
 public class Spawning : MonoBehaviour
 {
-	public float spawnX = -9.69999981f;
-	public float spawnY = 1.59000003f;
-	public float spawnZ = -1.16999996f;
+	public float spawnX = -7.69999981f;
+	public float spawnY = 1.70000005f;
+	public float spawnZ = -2.29999995f;
 	public GameObject playerPrefab;
 	public bool playerAlive;
-	
+
 	//private Transform playerTransform;
 	private int playerNum;
 	

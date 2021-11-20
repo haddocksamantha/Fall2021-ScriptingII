@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 705507994}
-  m_IndirectSpecularColor: {r: 0.44657838, g: 0.49641234, b: 0.57481676, a: 1}
+  m_IndirectSpecularColor: {r: 0.45125777, g: 0.5000476, b: 0.56856775, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -507,7 +507,7 @@ Light:
   m_Type: 1
   m_Shape: 0
   m_Color: {r: 1, g: 0.95686275, b: 0.8392157, a: 1}
-  m_Intensity: 1
+  m_Intensity: 1.5
   m_Range: 10
   m_SpotAngle: 30
   m_InnerSpotAngle: 21.80208
@@ -564,13 +564,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 705507993}
-  m_LocalRotation: {x: 0.40821788, y: -0.23456968, z: 0.10938163, w: 0.8754261}
-  m_LocalPosition: {x: 0, y: 3, z: 0}
+  m_LocalRotation: {x: 0.41224578, y: -0.61485744, z: -0.093057215, w: 0.665841}
+  m_LocalPosition: {x: 2.65, y: 9.45, z: -3.89}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 1
-  m_LocalEulerAnglesHint: {x: 50, y: -30, z: 0}
+  m_LocalEulerAnglesHint: {x: 25.756, y: -96.118, z: -44.464}
 --- !u!1 &862983967
 GameObject:
   m_ObjectHideFlags: 0
@@ -656,7 +656,7 @@ Camera:
   near clip plane: 0.3
   far clip plane: 1000
   field of view: 60
-  orthographic: 0
+  orthographic: 1
   orthographic size: 5
   m_Depth: -1
   m_CullingMask:
@@ -681,7 +681,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 963194225}
   m_LocalRotation: {x: 0.37959868, y: -0, z: -0, w: 0.92515135}
-  m_LocalPosition: {x: 0, y: 10.6, z: -8.4}
+  m_LocalPosition: {x: -1.8, y: 10.6, z: -8.4}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -1103,7 +1103,7 @@ MonoBehaviour:
   spawnX: -9.7
   spawnY: 1.59
   spawnZ: -1.17
-  playerPrefab: {fileID: 1775919008081595557, guid: 54c3f6500abfa0847b03e13a1e64ede6, type: 3}
+  playerPrefab: {fileID: 2529855136093232787, guid: 0620a44aa461f4d14b21afa3c75a350c, type: 3}
   playerAlive: 0
 --- !u!114 &1478903060
 MonoBehaviour:
