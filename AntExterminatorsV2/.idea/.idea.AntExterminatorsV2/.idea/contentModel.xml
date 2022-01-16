@@ -32,7 +32,9 @@
         <e p="Scripts" t="Include">
           <e p="Bullet.cs" t="Include" />
           <e p="BulletActivating.cs" t="Include" />
+          <e p="BulletButton.cs" t="Include" />
           <e p="BulletOutOfBounds.cs" t="Include" />
+          <e p="BulletStatusSO.cs" t="Include" />
           <e p="Defunct" t="Include">
             <e p="BoundaryCollision.cs" t="Include" />
             <e p="HealthSystem.cs" t="Include" />

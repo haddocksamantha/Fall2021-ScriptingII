@@ -215,7 +215,7 @@ Transform:
   m_GameObject: {fileID: 198632803}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -3, y: 0.7876828, z: -0.64039254}
-  m_LocalScale: {x: 2.53022, y: 1, z: 1}
+  m_LocalScale: {x: 4.6173987, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 2
@@ -345,13 +345,13 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1955739291335749952, guid: f9d4023d9d8ae4c4499866913c63e032, type: 3}
-        m_TargetAssemblyTypeName: 
-        m_MethodName: 
+      - m_Target: {fileID: 6871739790227349163, guid: baad5bf3ca50f4cc690ca3d74d4c86ef, type: 3}
+        m_TargetAssemblyTypeName: BulletActivating, Assembly-CSharp
+        m_MethodName: ShootGun
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: 
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
