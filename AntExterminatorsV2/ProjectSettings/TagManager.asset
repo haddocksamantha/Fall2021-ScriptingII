@@ -8,6 +8,7 @@ TagManager:
   - UpButton
   - Enemy
   - Bullet
+  - Joystick
   layers:
   - Default
   - TransparentFX

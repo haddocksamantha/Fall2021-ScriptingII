@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -10,9 +11,15 @@ public class PlayerMoveV2 : MonoBehaviour
 
     private float verticalInput;
 	private float zRange = 3f;
-    
-    
-    // Update is called once per frame
+
+	private FixedJoystick joystick;
+
+	private void Awake()
+	{
+		joystick = GameObject.FindWithTag("Joystick").GetComponent<FixedJoystick>();
+	}
+
+	// Update is called once per frame
     void Update()
     {
         OutOfBounds();
@@ -21,7 +28,7 @@ public class PlayerMoveV2 : MonoBehaviour
 
 	void PlayerMovementInput()
 	{
-		verticalInput = Input.GetAxis("Vertical");
+		verticalInput = joystick.Vertical;
 		transform.Translate(Vector3.forward * Time.deltaTime * playerSpeed * verticalInput);
 	}
 
