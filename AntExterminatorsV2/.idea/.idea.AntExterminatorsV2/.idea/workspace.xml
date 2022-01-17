@@ -21,21 +21,17 @@
   <component name="ChangeListManager">
     <list default="true" id="68b7ca63-999c-4707-a23c-f8a18dc385a4" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.AntExterminatorsV2/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.AntExterminatorsV2/.idea/contentModel.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.AntExterminatorsV2/.idea/indexLayout.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.AntExterminatorsV2/.idea/indexLayout.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.AntExterminatorsV2/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.AntExterminatorsV2/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/BulletShoot.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/BulletShoot.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/BulletPrefab.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/BulletPrefab.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Prefabs/PlayerPrefab.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/PlayerPrefab.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Level1.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Level1.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/bulletTransform.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/bulletTransform.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/BulletActivating.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/BulletActivating.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/SpawningEnemies.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/SpawningEnemies.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/BulletButton.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/BulletButton.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/BulletOutOfBounds.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/BulletOutOfBounds.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Logs/AssetImportWorker0-prev.log" beforeDir="false" afterPath="$PROJECT_DIR$/Logs/AssetImportWorker0-prev.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Logs/AssetImportWorker0.log" beforeDir="false" afterPath="$PROJECT_DIR$/Logs/AssetImportWorker0.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Logs/shadercompiler-AssetImportWorker0.log" beforeDir="false" afterPath="$PROJECT_DIR$/Logs/shadercompiler-AssetImportWorker0.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Logs/shadercompiler-UnityShaderCompiler0.log" beforeDir="false" afterPath="$PROJECT_DIR$/Logs/shadercompiler-UnityShaderCompiler0.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Logs/shadercompiler-UnityShaderCompiler1.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Logs/shadercompiler-UnityShaderCompiler2.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Logs/shadercompiler-UnityShaderCompiler3.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Logs/shadercompiler-UnityShaderCompiler4.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Logs/shadercompiler-UnityShaderCompiler5.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/obj/Debug/Assembly-CSharp.csprojAssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/Assembly-CSharp.csprojAssemblyReference.cache" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -66,7 +62,6 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/test/playerHealthModel.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Enemy Scripts/EnemyDataSO.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Bullet.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/BulletOutOfBounds.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/MuteAudio.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/test/playerHealthManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/HeartScript.cs" />
@@ -76,9 +71,11 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/Spawning.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Player Scripts/PlayerMoveV2.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/BulletStatusSO.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/BulletButton.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/BulletActivating.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/SpawningEnemies.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/BulletButton.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/NumOfBullets.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/BulletOutOfBounds.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/BulletActivating.cs" />
       </list>
     </option>
   </component>
@@ -147,7 +144,8 @@
       <workItem from="1637376247968" duration="543000" />
       <workItem from="1637546431821" duration="146000" />
       <workItem from="1642362613139" duration="629000" />
-      <workItem from="1642368657795" duration="2182000" />
+      <workItem from="1642368657795" duration="2422000" />
+      <workItem from="1642373307018" duration="3831000" />
     </task>
     <servers />
   </component>

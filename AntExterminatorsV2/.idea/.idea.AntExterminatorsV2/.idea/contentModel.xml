@@ -50,6 +50,7 @@
           <e p="HealthText.cs" t="Include" />
           <e p="HeartScript.cs" t="Include" />
           <e p="MuteAudio.cs" t="Include" />
+          <e p="NumOfBulletsSO.cs" t="Include" />
           <e p="PenaltyText.cs" t="Include" />
           <e p="Player Scripts" t="Include">
             <e p="PlayerCollision.cs" t="Include" />

@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 6871739790227349163}
   m_Layer: 0
   m_Name: bulletTransform
-  m_TagString: Untagged
+  m_TagString: bulletTrans
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -24,13 +24,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 237096286075730414}
-  m_LocalRotation: {x: -0.010574395, y: -0.018749887, z: -0.00019831465, w: 0.99976826}
+  m_LocalRotation: {x: -0.010574582, y: -0.018751478, z: -0.00019833501, w: 0.99976826}
   m_LocalPosition: {x: 0.85, y: 0.83, z: 0.58}
   m_LocalScale: {x: 1.0000001, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: -1.212, y: -2.149, z: 0}
 --- !u!114 &6871739790227349163
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -44,3 +44,5 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   bulletPrefab: {fileID: 2318969139907231197, guid: 4e892f3684172b04d92004426680acf6, type: 3}
+  numOfBullets: 0
+  bulletSO: {fileID: 11400000, guid: 99aae0e11d29a418f8f1e09fd6968711, type: 2}

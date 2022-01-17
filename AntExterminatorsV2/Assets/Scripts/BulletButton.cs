@@ -2,13 +2,14 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+/*
 public class BulletButton : MonoBehaviour
 {
-   public static bool bulletStatus;
-   private float time = 5f; 
+   public GameObject bulletTransform;
    
    public void PlayerShootBullet()
    {
+      GameObject.SetActive(true);
       StartCoroutine(BulletTimer());
    }
 
@@ -19,3 +20,4 @@ public class BulletButton : MonoBehaviour
       bulletStatus = false;
    }
 }
+*/
