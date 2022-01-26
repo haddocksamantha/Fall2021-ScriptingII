@@ -63,12 +63,8 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/Enemy Scripts/EnemyDataSO.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Bullet.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/MuteAudio.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/test/playerHealthManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/HeartScript.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/PenaltyText.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Enemy Scripts/EnemyDamage.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/DestroyOutOfBounds.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Spawning.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Player Scripts/PlayerMoveV2.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/BulletStatusSO.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/SpawningEnemies.cs" />
@@ -76,6 +72,10 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/NumOfBullets.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/BulletOutOfBounds.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/BulletActivating.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/DestroyOutOfBounds.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Spawning.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/test/playerHealthManager.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Enemy Scripts/EnemyDamage.cs" />
       </list>
     </option>
   </component>
@@ -146,6 +146,7 @@
       <workItem from="1642362613139" duration="629000" />
       <workItem from="1642368657795" duration="2422000" />
       <workItem from="1642373307018" duration="3831000" />
+      <workItem from="1643165899952" duration="2122000" />
     </task>
     <servers />
   </component>

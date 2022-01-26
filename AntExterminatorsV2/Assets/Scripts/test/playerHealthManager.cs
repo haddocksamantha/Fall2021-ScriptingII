@@ -41,12 +41,14 @@ public class playerHealthManager : MonoBehaviour
 
         bool CheckIfCollidingWithEnemy(Collider other)
         {
+            Debug.Log("collision");
             Debug.Log(other);
             var result = false; 
 		
             if (other.gameObject.tag == "Enemy")
             {
                 result = true;
+                Debug.Log("Colliding With Enemy");
             } else 
             {
                 result = false;

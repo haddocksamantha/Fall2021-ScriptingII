@@ -24,7 +24,7 @@ public class DestroyOutOfBounds : MonoBehaviour
         if (transform.position.x > topBound)
         {
       //      Debug.Log("Passed Right Boundary");
-            Destroy(gameObject);
+           
         }
         else if (transform.position.x < lowerBound)
         {
@@ -32,6 +32,7 @@ public class DestroyOutOfBounds : MonoBehaviour
 //            Debug.Log("Passed Left Boundary");
             Destroy(gameObject);
             score.points -= penalty;
+            Debug.Log("Passed Left Bound");
             
             if (score.points <= 0) score.points = 0;
         }

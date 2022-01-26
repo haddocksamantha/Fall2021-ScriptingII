@@ -20,6 +20,7 @@ public class EnemyDamage : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
+        Debug.Log("enemy colliding");
         CollisionWithPlayer();
         
         if (collidingWithPlayer)
@@ -36,6 +37,7 @@ public class EnemyDamage : MonoBehaviour
         if (GameObject.FindWithTag("Player"))
         {
             collidingWithPlayer = true;
+            Debug.Log("enemy colliding with player");
         } else if(!GameObject.FindWithTag("Player"))
         {
             collidingWithPlayer = false;
