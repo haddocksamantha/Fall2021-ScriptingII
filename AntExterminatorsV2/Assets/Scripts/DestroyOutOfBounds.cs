@@ -7,8 +7,8 @@ using UnityEngine.UI;
 public class DestroyOutOfBounds : MonoBehaviour
 {
     [SerializeField] private PlayerScoreSO score;
-    private float topBound = 13;
-    private float lowerBound = -11;
+    private float topBound = 13f;
+    private float lowerBound = -15f;
     private int penalty = 10;
     
     //public Text penaltyText;

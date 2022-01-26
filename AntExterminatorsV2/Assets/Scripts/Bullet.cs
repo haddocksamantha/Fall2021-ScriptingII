@@ -6,7 +6,7 @@ using UnityEngine;
 public class Bullet : MonoBehaviour
 {
 	[SerializeField] private PlayerScoreSO score;
-	public float bulletSpeed;
+	public float bulletSpeed = 2f;
 
 	private bool collidingWithEnemy;
 

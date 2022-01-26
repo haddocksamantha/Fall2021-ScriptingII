@@ -8,6 +8,7 @@ public class EnemyDamage : MonoBehaviour
     //[SerializeField] private playerhealthSO healthData;
     //these will call the player data SO 
     public int playerScore;
+    private bool isCollidingWithPlayer;
 
     //private int enDamage = 1;
     private int boundDamage = 1;
@@ -21,9 +22,9 @@ public class EnemyDamage : MonoBehaviour
     private void OnTriggerEnter(Collider other)
     {
         Debug.Log("enemy colliding");
-        CollisionWithPlayer();
+        isCollidingWithPlayer = CollidingWithPlayer(other);
         
-        if (collidingWithPlayer)
+        if (isCollidingWithPlayer)
         {
             DestroyEnemyPrefab();
             enemyData.numOfEnemies -= 1;
@@ -31,17 +32,20 @@ public class EnemyDamage : MonoBehaviour
             //   playerHealth -= colDamage;
         }
     }
-    
-    private void CollisionWithPlayer()
+    bool CollidingWithPlayer(Collider other)
     {
-        if (GameObject.FindWithTag("Player"))
+        Debug.Log(other);
+        var result = false;
+        
+        if (other.gameObject.tag == "Player")
         {
-            collidingWithPlayer = true;
+            result = true;
             Debug.Log("enemy colliding with player");
-        } else if(!GameObject.FindWithTag("Player"))
+        } else
         {
-            collidingWithPlayer = false;
+            result = false;
         }
+        return result;
     }
 
     private void CollisionWithBoundary()
