@@ -46,6 +46,8 @@
             <e p="EnemyDataSO.cs" t="Include" />
             <e p="EnemyMovement.cs" t="Include" />
           </e>
+          <e p="enemyBActivating.cs" t="Include" />
+          <e p="enemyBullet.cs" t="Include" />
           <e p="GameHandler.cs" t="Include" />
           <e p="HealthText.cs" t="Include" />
           <e p="HeartScript.cs" t="Include" />

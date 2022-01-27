@@ -9,6 +9,7 @@ public class playerHealthManager : MonoBehaviour
 {
     [SerializeField] private playerhealthSO healthData;
     private bool collidingWithEnemy;
+    private bool collidingWithBullet;
 
     public UnityEvent isDead;
 
@@ -27,18 +28,16 @@ public class playerHealthManager : MonoBehaviour
     private void OnTriggerEnter(Collider other)
     {
         collidingWithEnemy = CheckIfCollidingWithEnemy(other);
+        collidingWithBullet = CheckIfCollidingWithBullet(other);
 
         if (collidingWithEnemy)
         {
-            healthData.damage(1);
-            if (healthData.model.lives <= 0)
-            {
-                healthData.model.lives = 0;
-                Dead();
-                Debug.Log("DEAD");
-            }
+            HealthCheck();
+        }else if (collidingWithBullet)
+        {
+            HealthCheck();
         }
-
+        
         bool CheckIfCollidingWithEnemy(Collider other)
         {
             Debug.Log("collision");
@@ -54,6 +53,34 @@ public class playerHealthManager : MonoBehaviour
                 result = false;
             }
             return result;
+        }
+
+        bool CheckIfCollidingWithBullet(Collider other)
+        {
+            Debug.Log(other);
+            var result = false;
+
+            if (other.gameObject.tag == "EnemyBullet")
+            {
+                result = true;
+                Debug.Log("Colliding With Bullet");
+            }else
+            {
+                result = false;
+            }
+
+            return result;
+        }
+
+        void HealthCheck()
+        {
+            healthData.damage(1);
+            if (healthData.model.lives <= 0)
+            {
+                healthData.model.lives = 0;
+                Dead();
+                Debug.Log("DEAD");
+            }
         }
 
     }

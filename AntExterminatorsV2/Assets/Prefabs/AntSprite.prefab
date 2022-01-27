@@ -97,6 +97,7 @@ GameObject:
   - component: {fileID: 1926690127262012491}
   - component: {fileID: 4867509974986736516}
   - component: {fileID: 434064542181852104}
+  - component: {fileID: 6267533394201255670}
   m_Layer: 0
   m_Name: AntSprite
   m_TagString: Enemy
@@ -188,3 +189,17 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   score: {fileID: 11400000, guid: 5312349c4e5ce1947ba816ec614b613a, type: 2}
+--- !u!114 &6267533394201255670
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6166737009448140552}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5a7eda13b48074132962552eb4f727a6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  enemyBullet: {fileID: 790544441109087057, guid: 02a59219e69bb459c88b09b026647a17, type: 3}
+  time: 0.6

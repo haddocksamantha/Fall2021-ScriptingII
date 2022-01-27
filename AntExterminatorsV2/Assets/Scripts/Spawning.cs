@@ -19,7 +19,7 @@ public class Spawning : MonoBehaviour
 	    playerNum = 0;
 	    playerAlive = false;
 	    //playerPrefab = GameObject.FindWithTag("Player");
-        SpawnPlayer();
+       // SpawnPlayer();
     }
 
     // Update is called once per frame
@@ -44,7 +44,7 @@ public class Spawning : MonoBehaviour
 		//this will check if the player is in the scene and spawn if it is not
 		if (playerAlive == false)
 		{
-			SpawnPlayer();
+			//SpawnPlayer();
 		}
 	}
 

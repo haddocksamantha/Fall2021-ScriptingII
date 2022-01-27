@@ -18,13 +18,13 @@ public class BulletActivating : MonoBehaviour
         NumOfBulletsSO.numOfAmmo = 0;
         canShoot = true;
     }
-    private void Update()
+    /*private void Update()
     {
         if (Input.GetButton("Fire1"))
         {
             ShootGun();
         }
-    }
+    }*/
 
     public void ShootGun()
     {

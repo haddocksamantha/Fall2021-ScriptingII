@@ -10,6 +10,7 @@ TagManager:
   - Bullet
   - Joystick
   - bulletTrans
+  - EnemyBullet
   layers:
   - Default
   - TransparentFX

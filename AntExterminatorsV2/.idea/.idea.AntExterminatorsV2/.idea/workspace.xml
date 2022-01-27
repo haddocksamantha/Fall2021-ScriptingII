@@ -20,18 +20,26 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="68b7ca63-999c-4707-a23c-f8a18dc385a4" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.AntExterminatorsV2/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.AntExterminatorsV2/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.AntExterminatorsV2/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.AntExterminatorsV2/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Images/Sprites/slime-pixel.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Images/Sprites/slime-pixel.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Materials/bulletButtonMat.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Materials/bulletButtonMat.mat" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Prefabs/AntSprite.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/AntSprite.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/PlayerSprite.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/PlayerSprite.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Level1.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Level1.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Bullet.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Bullet.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/DestroyOutOfBounds.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/DestroyOutOfBounds.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Enemy Scripts/EnemyDamage.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Enemy Scripts/EnemyDamage.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/BulletActivating.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/BulletActivating.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Enemy Scripts/EnemyMovement.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Enemy Scripts/EnemyMovement.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Spawning.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Spawning.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/SpawningEnemies.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/SpawningEnemies.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/test/playerHealthManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/test/playerHealthManager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Logs/AssetImportWorker0-prev.log" beforeDir="false" afterPath="$PROJECT_DIR$/Logs/AssetImportWorker0-prev.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Logs/AssetImportWorker0.log" beforeDir="false" afterPath="$PROJECT_DIR$/Logs/AssetImportWorker0.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Temp/__Backupscenes/0.backup" beforeDir="false" afterPath="$PROJECT_DIR$/Temp/__Backupscenes/0.backup" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Logs/shadercompiler-AssetImportWorker0.log" beforeDir="false" afterPath="$PROJECT_DIR$/Logs/shadercompiler-AssetImportWorker0.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Logs/shadercompiler-UnityShaderCompiler1.log" beforeDir="false" afterPath="$PROJECT_DIR$/Logs/shadercompiler-UnityShaderCompiler1.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Logs/shadercompiler-UnityShaderCompiler2.log" beforeDir="false" afterPath="$PROJECT_DIR$/Logs/shadercompiler-UnityShaderCompiler2.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Logs/shadercompiler-UnityShaderCompiler3.log" beforeDir="false" afterPath="$PROJECT_DIR$/Logs/shadercompiler-UnityShaderCompiler3.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Logs/shadercompiler-UnityShaderCompiler4.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Logs/shadercompiler-UnityShaderCompiler5.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Logs/shadercompiler-UnityShaderCompiler6.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Logs/shadercompiler-UnityShaderCompiler7.log" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/Debug/Assembly-CSharp.csprojAssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/Assembly-CSharp.csprojAssemblyReference.cache" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -65,16 +73,19 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/PenaltyText.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Player Scripts/PlayerMoveV2.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/BulletStatusSO.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/SpawningEnemies.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/BulletButton.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/NumOfBullets.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/BulletOutOfBounds.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/BulletActivating.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Spawning.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/test/playerHealthManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Enemy Scripts/EnemyDamage.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/DestroyOutOfBounds.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Bullet.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/BulletActivating.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Spawning.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/enemyBullet.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Enemy Scripts/EnemyMovement.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/enemyBActivating.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/SpawningEnemies.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/test/playerHealthManager.cs" />
       </list>
     </option>
   </component>
@@ -147,6 +158,7 @@
       <workItem from="1642373307018" duration="3831000" />
       <workItem from="1643165899952" duration="2122000" />
       <workItem from="1643170730221" duration="1924000" />
+      <workItem from="1643234933239" duration="6241000" />
     </task>
     <servers />
   </component>
@@ -243,10 +255,6 @@
       <screen x="0" y="25" width="1440" height="799" />
     </state>
     <state width="1398" height="331" key="GridCell.Tab.3.right/0.25.1440.799@0.25.1440.799" timestamp="1635986758251" />
-    <state x="679" y="169" key="RiderGenerateDialog" timestamp="1634440477193">
-      <screen x="0" y="25" width="1440" height="799" />
-    </state>
-    <state x="679" y="169" key="RiderGenerateDialog/0.25.1440.799@0.25.1440.799" timestamp="1634440477193" />
     <state x="240" y="68" key="SettingsEditor" timestamp="1635982320508">
       <screen x="0" y="25" width="1440" height="801" />
     </state>
@@ -256,5 +264,9 @@
     </state>
     <state x="527" y="154" width="813" height="629" key="VCS.FileHistoryDialog/0.0.1440.900@0.0.1440.900" timestamp="1636947768210" />
     <state x="527" y="162" width="813" height="558" key="VCS.FileHistoryDialog/0.25.1440.799@0.25.1440.799" timestamp="1635213058669" />
+    <state x="383" y="194" width="672" height="678" key="search.everywhere.popup" timestamp="1643246759776">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state x="383" y="194" width="672" height="678" key="search.everywhere.popup/0.0.1440.900@0.0.1440.900" timestamp="1643246759776" />
   </component>
 </project>

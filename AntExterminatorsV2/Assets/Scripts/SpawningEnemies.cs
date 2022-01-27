@@ -14,7 +14,7 @@ public class SpawningEnemies : MonoBehaviour
     
  
 	public GameObject enemyPrefab;
-    public float time = 1f;
+    private float time = 4f;
    // public bool canSpawn = true;
     
     private float enemyX = 8.96000004f;
